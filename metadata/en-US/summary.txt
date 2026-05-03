@@ -1,0 +1,1 @@
+A privacy-focused screen dimmer that goes below system minimum and covers the status bar.

@@ -1,0 +1,12 @@
+EcoDimmer allows you to dim your screen further than your system settings allow. Perfect for night-time reading or battery saving on AMOLED screens.
+
+Unlike most other dimming apps, EcoDimmer uses an Accessibility Service overlay to ensure that the status bar, notification shade, and navigation bar are also dimmed for a consistent experience.
+
+Key Features:
+- Adjustable Dimming Intensity (10% to 90%)
+- Shake to Rescue: Vigorous shake gesture to emergency-disable the dimmer.
+- Scheduled Dimming: Set automatic ON/OFF times.
+- Privacy First: Requires zero standard permissions. No internet access. No screen reading.
+- Stealthy: Hides from app drawer. Access settings via QS Tile long-press.
+
+Built with performance and privacy in mind. Created by Antigravity.
