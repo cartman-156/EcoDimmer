@@ -34,10 +34,10 @@ This application was entirely designed, architected, and developed by **Antigrav
 
 ## 🏗 Project Architecture
 EcoDimmer is built with a focus on privacy and performance:
-- **Accessibility Service**: Used to draw a system-wide overlay that covers the status bar and notifications.
-- **Custom Overlays**: Leverages `WindowManager` with `TYPE_ACCESSIBILITY_OVERLAY` for consistent dimming.
+- **Foreground Service**: Runs a persistent overlay using `TYPE_APPLICATION_OVERLAY` to dim the status and navigation bars.
+- **Custom Overlays**: Leverages `WindowManager` with `TYPE_APPLICATION_OVERLAY` for consistent dimming across the screen.
 - **Sensor Logic**: Integrated accelerometer listeners for the "Shake to Rescue" safety feature.
-- **Privacy Hardened**: Explicitly disables screen-reading (`canRetrieveWindowContent="false"`) and has no internet permissions.
+- **Privacy Hardened**: Explicitly disables screen‑reading and declares zero standard permissions.
 
 ## 🔨 Development & Building
 To build the project from source:
@@ -53,7 +53,7 @@ To build the project from source:
 1. Download the latest `eco-dimmer.apk` from the [Releases](https://github.com/cartman-156/EcoDimmer/releases) section.
 2. Install the APK (you may need to allow "Install from Unknown Sources").
 3. Edit your Quick Settings panel and drag the **Eco Dim** tile into your active list.
-4. **Long-press** the tile to open the setup screen and grant the Accessibility permission.
+4. **Long‑press** the tile to open the setup screen and grant the **Draw over other apps** permission.
 
 ### ⚖ License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
