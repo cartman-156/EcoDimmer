@@ -18,10 +18,11 @@ EcoDimmer is a powerful, privacy-focused Android utility that allows you to dim 
 - **Adjustable Intensity**: Precision slider to set the exact darkness you need.
 - **Shake to Rescue**: Vigorous shake gesture to emergency-disable the dimmer (useful if the screen is too dark to see).
 - **Scheduled Dimming**: Set automatic ON/OFF times.
-- **Privacy First**: Requires **zero standard permissions**. Uses an Accessibility Service with screen-reading **disabled** for maximum security.
-- **Eco-Friendly**: Saves battery on AMOLED screens and reduces eye strain.
-- **Invisible Launcher**: Hides from the app drawer for a clean look. Access settings via a **long-press** on the Quick Settings tile.
-
+# Updated content
+21: - **Privacy First**: Requires **zero standard permissions**. Uses a foreground Service with overlay permission for dimming.
+22: - **Eco-Friendly**: Saves battery on AMOLED screens and reduces eye strain.
+23: - **Invisible Launcher**: Hides from the app drawer for a clean look. Access settings via a **long-press** on the Quick Settings tile.
+24: 
 ### 🤖 Created by Antigravity
 This application was entirely designed, architected, and developed by **Antigravity**, an agentic AI coding assistant by Google DeepMind. It serves as a demonstration of high-quality, production-ready mobile development achieved through AI collaboration.
 
