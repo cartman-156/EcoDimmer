@@ -39,11 +39,19 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedBundle: Bundle?) {
         super.onCreate(savedBundle)
         prefsManager = PrefsManager(this)
+    }
+
+    override fun onStart() {
+        super.onStart()
         val filter = IntentFilter(DimmerAccessibilityService.ACTION_STATE_CHANGED)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            registerReceiver(stateReceiver, filter, Context.RECEIVER_NOT_EXPORTED)
-        } else {
-            registerReceiver(stateReceiver, filter)
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                registerReceiver(stateReceiver, filter, Context.RECEIVER_NOT_EXPORTED)
+            } else {
+                registerReceiver(stateReceiver, filter)
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
         }
     }
 
@@ -52,9 +60,11 @@ class MainActivity : ComponentActivity() {
         renderUi()
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        try { unregisterReceiver(stateReceiver) } catch (e: Exception) {}
+    override fun onStop() {
+        super.onStop()
+        try { 
+            unregisterReceiver(stateReceiver) 
+        } catch (e: Exception) {}
     }
 
     private fun renderUi() {

@@ -10,7 +10,8 @@ EcoDimmer is a powerful, privacy-focused Android utility that allows you to dim 
 
 ## 📋 Requirements
 - **Minimum Android Version**: Android 8.0 (Oreo) / API 26 or higher.
-- **Accessibility Service**: Required to draw the dimming overlay over the status bar and notifications.
+- **Overlay Permission**: Requires the `Draw over other apps` permission (`SYSTEM_ALERT_WINDOW`).
+- **UPI Auto‑Disable**: The dimmer automatically disables when a known UPI app is in the foreground.
 
 ### 🚀 Key Features:
 - **Full-Screen Dimming**: Unlike most apps, EcoDimmer dims the status bar, notification shade, and navigation bar.
